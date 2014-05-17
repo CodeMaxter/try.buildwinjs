@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../lib/winjs/css/ui-dark.css">
+        <link rel="stylesheet" href="css/orientation-and-itemspacing.css">
+    </head>
+    <body>
+        <div class="box">
+            <label id="OrientationLabel">Toggle Orientation:</label>
+            <button class="action" id="OrientationButton">Vertical</button><br /><br />
+            <label id="SpaceLabel">Item Spacing: </label><br /><input type="range" id="SpaceRange" step="5" value="0" aria-labelledby="SpaceLabel" /><br />
+
+            <div id="orientationAndItemSpacing_ItemTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+                <div class="overlaidItemTemplate">
+                    <img class="image" data-win-bind="src: picture; alt: title" />
+                    <div class="overlay">
+                        <h2 class="ItemTitle" data-win-bind="textContent: title"></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="orientationAndItemSpacing_FlipView" class="flipView"
+                 data-win-control="WinJS.UI.FlipView"
+                 data-win-options="{ itemDataSource: DefaultData.bindingList.dataSource, itemTemplate: orientationAndItemSpacing_ItemTemplate }">
+            </div>
+        </div>
+
+        <script src="../lib/winjs/js/base.js"></script>
+        <script src="../lib/winjs/js/ui.js"></script>
+        <script src="../lib/winjs/js/en-US/base.strings.js"></script>
+        <script src="../lib/winjs/js/en-US/ui.strings.js"></script>
+
+        <script src="js/orientation-and-itemspacing.js"></script>
+    </body>
+</html>

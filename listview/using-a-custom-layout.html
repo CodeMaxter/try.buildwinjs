@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../lib/winjs/css/ui-dark.css">
+        <link rel="stylesheet" href="css/using-a-custom-layout.css">
+    </head>
+    <body>
+        <div class="statusTemplate smallListIconTextTemplate" data-win-control="WinJS.Binding.Template">
+            <div class="smallListIconTextItem">
+                <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: picture" />
+                <div class="smallListIconTextItem-Detail">
+                    <h4 data-win-bind="innerText: title"></h4>
+                    <h6 class="win-type-ellipsis" data-win-bind="innerText: text"></h6>
+                </div>
+            </div>
+        </div>
+        <div class="photoTemplate" data-win-control="WinJS.Binding.Template">
+            <div class="imageOverlayLanding">
+                <img class="imageOverlayLandingImage" data-win-bind="src: picture" />
+                <div class="imageOverlayLandingOverlay">
+                    <div class="imageOverlayLandingOverlayText win-type-ellipsis" data-win-bind="innerText: title"></div>
+                </div>
+            </div>
+        </div>
+        <div class="listView" data-win-control="WinJS.UI.ListView" data-win-options="{
+             itemDataSource: Sample.CustomLayout.list.dataSource,
+             layout: {type: Sample.CustomLayout.StatusLayout}}">
+        </div>
+
+
+
+        <script src="../lib/winjs/js/base.js"></script>
+        <script src="../lib/winjs/js/ui.js"></script>
+        <script src="../lib/winjs/js/en-US/base.strings.js"></script>
+        <script src="../lib/winjs/js/en-US/ui.strings.js"></script>
+
+        <script src="js/using-a-custom-layout.js"></script>
+    </body>
+</html>

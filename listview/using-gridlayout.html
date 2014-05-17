@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../lib/winjs/css/ui-dark.css">
+        <link rel="stylesheet" href="css/using-gridlayout.css">
+    </head>
+    <body>
+        <!-- Simple template for the ListView instantiation  -->
+        <div id="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display: none">
+            <div class="smallListIconTextItem">
+                <img src="#" class="smallListIconTextItem-Image" data-win-bind="src: picture" />
+                <div class="smallListIconTextItem-Detail">
+                    <h4 data-win-bind="textContent: title"></h4>
+                    <h6 data-win-bind="textContent: text"></h6>
+                </div>
+            </div>
+        </div>
+
+        <!-- The declarative markup necesary for ListView instantiation -->
+        <!-- Call WinJS.UI.processAll() in your initialization code -->
+        <div id="listView"
+             class="win-selectionstylefilled"
+             data-win-control="WinJS.UI.ListView"
+             data-win-options="{
+             itemDataSource: Sample.ListView.data.dataSource,
+             itemTemplate: smallListIconTextTemplate,
+             selectionMode: 'none',
+             tapBehavior: 'none',
+             swipeBehavior: 'none',
+             layout: { type: WinJS.UI.GridLayout }
+             }">
+        </div>
+
+        <script src="../lib/winjs/js/base.js"></script>
+        <script src="../lib/winjs/js/ui.js"></script>
+        <script src="../lib/winjs/js/en-US/base.strings.js"></script>
+        <script src="../lib/winjs/js/en-US/ui.strings.js"></script>
+
+        <script src="js/using-gridlayout.js"></script>
+    </body>
+</html>

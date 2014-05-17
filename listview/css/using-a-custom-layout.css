@@ -1,0 +1,80 @@
+/* Styles used for the custom layout */
+.listView .statusLayout {
+    position: static;
+}
+
+.listView .statusLayout .win-container {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.listView .statusLayout .win-item {
+    width: 250px;
+    height: 100%;
+    background-color: #eee;
+    color:rgb(0,0,0);
+}
+
+/* styles */
+.listView {
+    width: 280px;
+    height: calc(100% - 20px);
+}
+
+/* Template for the items in the ListViews in this sample */
+/* Small items */
+.smallListIconTextItem {
+    width: 250px;
+    height: 70px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.smallListIconTextItem img.smallListIconTextItem-Image {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    float:left;
+}
+
+.smallListIconTextItem .smallListIconTextItem-Detail {
+    margin: 5px;
+}
+
+/* Large items */
+.imageOverlayLanding {
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    position:relative;
+}
+
+/* image */
+.imageOverlayLanding .imageOverlayLandingImage {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+/* overlay properties */
+.imageOverlayLanding .imageOverlayLandingOverlay {
+    height: 30px;
+    line-height: 20px;
+    overflow: hidden;
+    padding: 5px;
+    z-index: 4;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+/* text line 1 */
+.imageOverlayLanding .imageOverlayLandingOverlay .imageOverlayLandingOverlayText {
+    width: 220px;
+    height: 60px;
+    overflow: hidden;
+    color: rgb(0,0,0);
+    position:absolute;
+    z-index:3;
+}

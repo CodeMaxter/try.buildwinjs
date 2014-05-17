@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../lib/winjs/css/ui-dark.css">
+        <link rel="stylesheet" href="css/semantic-zoom-basics.css">
+    </head>
+    <body>
+        <div id="sezoDiv"
+             data-win-control="WinJS.UI.SemanticZoom"
+             data-win-options="{ zoomFactor: 0.5, initiallyZoomedOut: false }"
+             style="height: 290px; border:1px solid black">
+            <div id="ZoomedInDiv"
+                 data-win-control="CustomControls.Timeline"
+                 data-win-options="{ start: 1900, end: 2000 }"></div>
+            <div id="ZoomedOutDiv"
+                 data-win-control="CustomControls.Timeline"
+                 data-win-options="{ start: 1900, end: 2000, interval: 10 }"></div>
+        </div>
+        <div class="box">
+            <p>
+                <b>Zoomed out</b> view: <b>decades</b> from 1900 to 2000<br />
+                <b>Zoomed in</b> view: <b>every year</b><br />
+                Use pinch gesture or mouse to alternate between the views.
+            </p>
+        </div>
+
+
+        <script src="../lib/winjs/js/base.js"></script>
+        <script src="../lib/winjs/js/ui.js"></script>
+        <script src="../lib/winjs/js/en-US/base.strings.js"></script>
+        <script src="../lib/winjs/js/en-US/ui.strings.js"></script>
+
+        <script src="js/semantic-zoom-basics.js"></script>
+    </body>
+</html>

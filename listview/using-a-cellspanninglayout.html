@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="../lib/winjs/css/ui-dark.css">
+        <link rel="stylesheet" href="css/using-a-cellspanninglayout.css">
+    </head>
+    <body>
+        <div class="box">
+            <div id="listView"
+                 data-win-control="WinJS.UI.ListView"
+                 data-win-options="{
+                 itemDataSource: myCellSpanningData.dataSource,
+                 itemTemplate: MyCellSpanningJSTemplate,
+                 selectionMode: 'none',
+                 tapBehavior: 'none',
+                 swipeBehavior: 'none',
+                 layout: {
+                 groupInfo: groupInfo,
+                 itemInfo: itemInfo,
+                 type: WinJS.UI.CellSpanningLayout
+                 }
+                 }">
+            </div>
+        </div>
+
+        <script src="../lib/winjs/js/base.js"></script>
+        <script src="../lib/winjs/js/ui.js"></script>
+        <script src="../lib/winjs/js/en-US/base.strings.js"></script>
+        <script src="../lib/winjs/js/en-US/ui.strings.js"></script>
+
+        <script src="js/using-a-cellspanninglayout.js"></script>
+    </body>
+</html>

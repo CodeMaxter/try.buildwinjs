@@ -1,0 +1,23 @@
+#listView {
+    height: 280px;
+}
+
+.smallListIconTextItem {
+    width: 322px;
+    height: 65px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.smallListIconTextItem img.smallListIconTextItem-Image {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    float: left;
+    margin-right: 20px;
+}
+
+.smallListIconTextItem .smallListIconTextItem-Detail {
+    margin: 5px;
+}
+

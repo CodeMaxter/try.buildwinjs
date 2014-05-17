@@ -1,0 +1,40 @@
+.timeline
+{
+    color: WhiteSmoke;
+}
+
+.timeline-caption
+{
+    text-align: left;
+    font-size: medium;
+}
+
+.timeline-line
+{
+    width: 80px;
+    height: 25px;
+    background-image: linear-gradient(to right, rgb(57, 23, 69)  0%, rgb(82, 51, 99)  100%);
+}
+
+.timeline-item
+{
+    height:200px;
+    float: left;
+}
+
+#ZoomedInDiv
+{   
+    height: inherit
+}
+
+#ZoomedOutDiv
+{   
+    height: inherit
+}
+
+#sezoDiv
+{
+    width: calc(100% - 5px);
+    background-color: Black;
+}
+
